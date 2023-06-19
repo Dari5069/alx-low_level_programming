@@ -2,9 +2,9 @@
 #include<time.h>
 #include<stdio.h>
 /**
- * main - Entry point
- * Describetion ' get the last digit of a number'
- * Return: Always 0
+ * main - Enrty point
+ * checking for the last digit of random numbers
+ * Return: always 0 if successful
  */
 int main(void)
 {
@@ -16,11 +16,11 @@ int main(void)
 	ld = n % 10;
 	if (ld > 5)
 	{
-		printf("last digit of %d is %d and is greater than 5\n", n, ld);
+		printf("last digit of %d is %d and greater than 5\n", n, ld);
 	}
 	else if (ld == 0)
 	{
-		printf("last digit of %d is %d and 0\n", n, ld);
+		printf("last digit of %d is %d and equal 0\n", n, ld);
 	}
 	else
 	{
