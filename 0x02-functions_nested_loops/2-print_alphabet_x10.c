@@ -1,4 +1,7 @@
+#ifndef
+#define
 #include "main.h"
+#endif
 /**
  * main - Entry point
  * prints 10 times the alphabet in lowercase
