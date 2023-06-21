@@ -1,18 +1,17 @@
 #include "main.h"
 /**
- * main - Entry point
- * description 'prints alphabet in lowercase
+ * main-Entry point
+ * print_alphabet - prints the alphabet in lowercase
  *
- * return: 0 if success
+ * Return:Always 0 if (success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	int i;
+     int i;
 
-	if (i >= 97 && i <= 122)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
-		return (0);
+     for (i = 97; i <= 122; i++)
+     {
+          _putchar(i)
+     }
+      _putchar('\n');
 }
