@@ -1,10 +1,12 @@
 #include "main.h"
 /**
- * puts2 -  prints characters of a string starting with the first one
+ * puts2 -  prints character of a string,starting with first character
+ * followed by a new line
  * @str: input
  * Return: print
  */
 void puts2(char *str)
+
 {
 	int longi = 0;
 	int t = 0;
