@@ -1,6 +1,23 @@
 #ifndef MAIN_HEADERFILE
 #define MAIN_HEADERFILE
 
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points at the next node
+ *
+ * Description: singly linked list node structure
+ * for 0x13-more_singly_linked_lists project
+ */
+typedef struct listint_s
+{
+	int n;
+	struct listint_s *next;
+} listint_t;
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
