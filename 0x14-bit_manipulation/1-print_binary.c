@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_binary - equivalent binary number to be print
@@ -7,26 +7,21 @@
 
 void print_binary(unsigned long int n)
 {
-int count = 0;
+int i, count = 0;
 unsigned long int current;
 
-while (current > 0)
+for (i = 63; i >= 0; i--)
 {
-current >>= 1;
-if (n & current)
+current = n >> i;
+
+if (current & 1)
 {
-putchar('1');
-count = 1;
+_putchar('1');
+count++;
 }
 else if (count)
-{
-putchar('0');
+_putchar('0');
 }
-
-}
-
 if (!count)
-{
-putchar('0');
-}
+_putchar('0');
 }
