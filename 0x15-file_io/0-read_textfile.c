@@ -27,5 +27,4 @@ w = write(STDOUT_FILENO, buff, t);
 free(buff);
 close(fd);
 return (w);
-
 }
